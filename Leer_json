@@ -1,0 +1,7 @@
+import json
+file_name = "data.json"
+
+with open(file_name) as data:
+    datos = json.load(data)
+print(datos["ip"]+"\n"+datos["so"]+"\n"+datos["cpu"])
+print(datos["version"][0])
